@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import React, { useState } from 'react';
+import Sidebar from './Sidebar';
 
 
 function App() {
@@ -27,10 +28,13 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <button onClick={startRecognition}>Start Recognition</button>
-        <button onClick={stopRecognition}>Stop Recognition</button>
-        <p>{transcript}</p>
+        <Sidebar />
+        <div className="Main-content">
+          <img className="Child-component App-logo" src={logo} alt="logo" />
+          <button className="Child-component" onClick={startRecognition}>Start Recognition</button>
+          <button className="Child-component" onClick={stopRecognition}>Stop Recognition</button>
+          <p>{transcript}</p>
+        </div>
       </header>
     </div>
   );

@@ -1,5 +1,11 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
 .App {
   text-align: center;
+  height: 100%;
 }
 
 .App-logo {
@@ -13,15 +19,22 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+.Main-content {
+  background-color: rgb(17, 55, 130);
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  height: 100%;
+  flex: 1;
+  display: flex;
+  overflow: auto;
+}
+
+.App-header {
+  background-color: #333;
+  display: flex;
+  flex-direction: row;
   font-size: calc(10px + 2vmin);
   color: white;
+  height: 100%;
 }
 
 .App-link {
@@ -35,4 +48,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.Child-component {
+  margin: 10px;
+  padding: 15px;
 }
