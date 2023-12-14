@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import React, { useState } from 'react';
 import Sidebar from './Sidebar';
+import InputBox from './InputBox';
 
 
 function App() {
@@ -30,10 +31,13 @@ function App() {
       <header className="App-header">
         <Sidebar />
         <div className="Main-content">
-          <img className="Child-component App-logo" src={logo} alt="logo" />
-          <button className="Child-component" onClick={startRecognition}>Start Recognition</button>
-          <button className="Child-component" onClick={stopRecognition}>Stop Recognition</button>
-          <p>{transcript}</p>
+          <div className="Chat-history">
+            <img className="Child-component App-logo" src={logo} alt="logo" />
+            <button className="Child-component" onClick={startRecognition}>Start Recognition</button>
+            <button className="Child-component" onClick={stopRecognition}>Stop Recognition</button>
+            <p>{transcript}</p>
+          </div>
+          <InputBox />
         </div>
       </header>
     </div>

@@ -1,0 +1,30 @@
+.input-box {
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    justify-content: flex-end;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ccc;
+  }
+
+  .input-box input {
+    flex: 1;
+    padding: 8px;
+    margin-right: 10px;
+  }
+
+  .input-box button {
+    padding: 8px 15px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+
+  /* Add specific styling for the send icon if needed */
+  .input-box button svg {
+    margin-right: 5px;
+  }

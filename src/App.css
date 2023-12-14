@@ -1,4 +1,4 @@
-body, html {
+html {
   height: 100%;
   margin: 0;
 }
@@ -21,11 +21,18 @@ body, html {
 
 .Main-content {
   background-color: rgb(17, 55, 130);
+  justify-content: center;
   flex-direction: column;
   height: 100%;
   flex: 1;
   display: flex;
-  overflow: auto;
+}
+
+.Chat-history {
+  flex: 1;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
 }
 
 .App-header {
